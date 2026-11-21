@@ -7,4 +7,4 @@ Static copy of mercybuilt.com, self-hosted on GitHub Pages (moved off ChatGPT Si
 - `assets/site.js` – form handling. Forms save to Supabase:
   - hoodie preorders -> `public.mercy_built_preorders`
   - "Get first-drop updates" + "Tell us what you want" -> `public.mercy_built_interest`
-- `CNAME.cutover` – rename to `CNAME` at DNS cutover time (see DNS plan).
+- `CNAME` – custom domain mercybuilt.com (www redirects).
