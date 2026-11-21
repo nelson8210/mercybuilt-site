@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Mercy Built | 2 Corinthians 5:17 Hoodie Preorder - First Release</title>
+<title>Mercy Built | Romans 8:39 Hoodie Preorder - First Release</title>
 <meta name="description" content="Mercy Built first release: preorder the hoodie. Faith you can wear.">
 <meta property="og:title" content="Mercy Built | Hoodie Preorder - First Release">
 <meta property="og:description" content="Reserve your size and color for the first Mercy Built release.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://mercybuilt.com/assets/mercy-built-hoodie-lineup.jpg">
+<meta property="og:image" content="https://mercybuilt.com/assets/mercy-built-hoodies-romans.jpg">
 <link rel="icon" href="../assets/mb-mark.jpg">
 <meta name="theme-color" content="#0d0d0d">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,9 +67,9 @@ footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:12px;l
 <main class="wrap">
   <div class="hero">
     <span class="eyebrow">Preorder &middot; First Release</span>
-    <h1>The 2 Corinthians 5:17 Hoodie</h1>
-    <p class="sub">A heavier comfort piece with a quiet front mark and a 2 Corinthians 5:17 back message about being made new. Four colors. Reserve your size and color now.</p>
-    <div class="verse">&ldquo;The old has passed away; behold, the new has come.&rdquo; &middot; 2 Cor 5:17</div>
+    <h1>The Romans 8:39 Hoodie</h1>
+    <p class="sub">A heavier comfort piece with a quiet front mark and a Romans 8:39 back message about being fully known and deeply loved. Four colors. Reserve your size and color now.</p>
+    <div class="verse">&ldquo;You are not forgotten. You are fully known. You are deeply loved.&rdquo; &middot; Romans 8:39</div>
     <div class="stage" id="stage"></div>
   </div>
 
@@ -81,7 +81,7 @@ footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:12px;l
 
   <section id="preorder">
     <h2>Reserve Yours</h2>
-    <p class="hint">No payment today. We'll reach out by email when the preorder is ready to confirm.</p>
+    <p class="hint">Request a hoodie from our sample order. We’ll email you the price. Payment is in person.</p>
     <form id="form" novalidate>
       <div><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required maxlength="120"></div>
       <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="254"></div>
@@ -100,13 +100,13 @@ footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:12px;l
     <div class="done" id="done">
       <h2>You're on the list</h2>
       <p id="doneMsg"></p>
-      <p>Watch your inbox. We'll email you when your preorder is ready to confirm.</p>
+      <p>Watch your inbox for the price. You’ll pay in person.</p>
     </div>
   </section>
 </main>
 <footer>Mercy Built &middot; Not self-made. Mercy built. &middot; <a href="../">mercybuilt.com</a></footer>
 
-<script src="config.js"></script>
+<script src="config.js?v=romans-839"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 (function(){
@@ -125,7 +125,7 @@ footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:12px;l
       cc=document.getElementById('colorChips'), sc=document.getElementById('sizeChips');
   function render(){
     var c = C.colors.find(function(x){return x.name===state.color});
-    if(!c && C.lineup){ stage.className='stage wide'; stage.innerHTML='<img src="'+C.lineup+'" alt="Mercy Built 2 Corinthians 5:17 hoodie in black, olive, cream and blush pink, front and back">'+(C.price ? '<div class="price">'+C.price+'</div>' : ''); }
+    if(!c && C.lineup){ stage.className='stage wide'; stage.innerHTML='<img src="'+C.lineup+'" alt="Mercy Built Romans 8:39 hoodie in black, olive, cream and blush pink, front and back">'+(C.price ? '<div class="price">'+C.price+'</div>' : ''); }
     else { c=c||C.colors[0]; stage.className='stage'; stage.innerHTML = visual(c) + '<div class="tag">'+c.name+'</div>' + (C.price ? '<div class="price">'+C.price+'</div>' : ''); }
     [].forEach.call(document.querySelectorAll('[data-color]'),function(b){b.setAttribute('aria-pressed', b.dataset.color===state.color)});
     [].forEach.call(document.querySelectorAll('[data-size]'),function(b){b.setAttribute('aria-pressed', b.dataset.size===state.size)});
@@ -167,7 +167,7 @@ footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:12px;l
     if(res.error){ btn.disabled=false; btn.textContent='Reserve My Hoodie'; err.textContent='Something went wrong. Please try again.'; console.error(res.error); return; }
     form.style.display='none';
     var d=document.getElementById('done'); d.style.display='block';
-    document.getElementById('doneMsg').textContent='Thanks, '+name.split(' ')[0]+'. Your '+state.color+' 2 Corinthians 5:17 hoodie in size '+state.size+(qty>1?' (x'+qty+')':'')+' is reserved.';
+    document.getElementById('doneMsg').textContent='Thanks, '+name.split(' ')[0]+'. Your '+state.color+' Romans 8:39 hoodie in size '+state.size+(qty>1?' (x'+qty+')':'')+' is reserved.';
     d.scrollIntoView({behavior:'smooth',block:'center'});
   });
 })();

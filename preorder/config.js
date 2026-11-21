@@ -9,13 +9,13 @@
 // ============================================================
 window.MB_CONFIG = {
   colors: [
-    { name: "Black",      hex: "#131210", image: "../assets/hoodie-black.jpg" },
-    { name: "Olive",      hex: "#4a4630", image: "../assets/hoodie-olive.jpg" },
-    { name: "Cream",      hex: "#d8c6b5", image: "../assets/hoodie-cream.jpg" },
-    { name: "Blush Pink", hex: "#ce9a8e", image: "../assets/hoodie-blush-pink.jpg" }
+    { name: "Black",      hex: "#131210", image: "../assets/hoodie-romans-black.jpg" },
+    { name: "Olive",      hex: "#4a4630", image: "../assets/hoodie-romans-olive.jpg" },
+    { name: "Cream",      hex: "#d8c6b5", image: "../assets/hoodie-romans-cream.jpg" },
+    { name: "Blush Pink", hex: "#ce9a8e", image: "../assets/hoodie-romans-blush-pink.jpg" }
   ],
-  product: "2 Corinthians 5:17 hoodie",
-  lineup: "../assets/mercy-built-hoodie-lineup.jpg",
+  product: "Romans 8:39 hoodie",
+  lineup: "../assets/mercy-built-hoodies-romans.jpg",
   sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
   price: "",
   supabaseUrl: "https://wkftusmqasujgqgokpgw.supabase.co",
