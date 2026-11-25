@@ -9,13 +9,13 @@
 // ============================================================
 window.MB_CONFIG = {
   colors: [
-    { name: "Black",      hex: "#131210", image: "../assets/hoodie-romans-black.jpg?v=tonal" },
-    { name: "Olive",      hex: "#4a4630", image: "../assets/hoodie-romans-olive.jpg?v=tonal" },
-    { name: "Cream",      hex: "#d8c6b5", image: "../assets/hoodie-romans-cream.jpg?v=tonal" },
-    { name: "Blush Pink", hex: "#ce9a8e", image: "../assets/hoodie-romans-blush-pink.jpg?v=tonal" }
+    { name: "Black",      hex: "#131210", image: "../assets/hoodie-romans-black.jpg?v=sleeves" },
+    { name: "Olive",      hex: "#4a4630", image: "../assets/hoodie-romans-olive.jpg?v=sleeves" },
+    { name: "Cream",      hex: "#d8c6b5", image: "../assets/hoodie-romans-cream.jpg?v=sleeves" },
+    { name: "Blush Pink", hex: "#ce9a8e", image: "../assets/hoodie-romans-blush-pink.jpg?v=sleeves" }
   ],
   product: "Romans 8:39 hoodie",
-  lineup: "../assets/mercy-built-hoodies-romans.jpg?v=tonal",
+  lineup: "../assets/mercy-built-hoodies-romans.jpg?v=sleeves",
   sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
   price: "",
   supabaseUrl: "https://wkftusmqasujgqgokpgw.supabase.co",
