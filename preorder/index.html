@@ -65,20 +65,64 @@ button.submit:disabled{opacity:.6;cursor:wait}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:12px;letter-spacing:.12em;text-transform:uppercase;border-top:1px solid var(--line)}
 </style>
+<link rel="stylesheet" href="../assets/hoodie-films.css">
 </head>
 <body>
 <header><a href="../" class="brand"><img src="../assets/mb-mark.jpg" alt="Mercy Built MB cross mark" width="34" height="34"><span class="logo">Mercy <span>Built</span></span></a></header>
-<main class="wrap">
+<main>
+<div class="wrap">
   <div class="hero">
     <span class="eyebrow">Preorder &middot; First Release</span>
     <h1>The Romans 8:39 Hoodie</h1>
     <p class="sub">A soft fleece pullover with a quiet front mark and a Romans 8:39 back message about being fully known and deeply loved. Four colors. Reserve your size and color now.</p>
     <div class="verse">&ldquo;You are not forgotten. You are fully known. You are deeply loved.&rdquo; &middot; Romans 8:39</div>
-    <div class="stage" id="stage"></div>
+    <p><a class="hoodie-films__cta" href="#hoodie-films">Watch the hoodie films</a></p>
   </div>
 
+</div>
+<section id="hoodie-films" class="hoodie-films" aria-labelledby="hoodie-films-title">
+  <div class="hoodie-films__intro">
+    <div>
+      <h2 id="hoodie-films-title">The hoodie in motion</h2>
+      <p>Watch the first Mercy Built drop in all four colors.</p>
+    </div>
+    <a class="hoodie-films__cta" href="#preorder">Reserve your hoodie</a>
+  </div>
+  <div class="hoodie-films__grid">
+    <figure class="hoodie-films__card">
+      <video controls playsinline preload="none" width="720" height="1280" poster="../assets/films/black.jpg" aria-label="Mercy Built Black hoodie commercial">
+        <source src="../assets/films/black.mp4" type="video/mp4">
+        <a href="../assets/films/black.mp4">Watch the Black hoodie commercial</a>
+      </video>
+      <figcaption><span class="hoodie-films__swatch" style="--swatch:#242321" aria-hidden="true"></span>Black</figcaption>
+    </figure>
+    <figure class="hoodie-films__card">
+      <video controls playsinline preload="none" width="720" height="1280" poster="../assets/films/olive.jpg" aria-label="Mercy Built Olive hoodie commercial">
+        <source src="../assets/films/olive.mp4" type="video/mp4">
+        <a href="../assets/films/olive.mp4">Watch the Olive hoodie commercial</a>
+      </video>
+      <figcaption><span class="hoodie-films__swatch" style="--swatch:#555844" aria-hidden="true"></span>Olive</figcaption>
+    </figure>
+    <figure class="hoodie-films__card">
+      <video controls playsinline preload="none" width="720" height="1280" poster="../assets/films/cream.jpg" aria-label="Mercy Built Cream hoodie commercial">
+        <source src="../assets/films/cream.mp4" type="video/mp4">
+        <a href="../assets/films/cream.mp4">Watch the Cream hoodie commercial</a>
+      </video>
+      <figcaption><span class="hoodie-films__swatch" style="--swatch:#e5d7bd" aria-hidden="true"></span>Cream</figcaption>
+    </figure>
+    <figure class="hoodie-films__card">
+      <video controls playsinline preload="none" width="720" height="1280" poster="../assets/films/blush-pink.jpg" aria-label="Mercy Built Blush Pink hoodie commercial">
+        <source src="../assets/films/blush-pink.mp4" type="video/mp4">
+        <a href="../assets/films/blush-pink.mp4">Watch the Blush Pink hoodie commercial</a>
+      </video>
+      <figcaption><span class="hoodie-films__swatch" style="--swatch:#c28c8b" aria-hidden="true"></span>Blush Pink</figcaption>
+    </figure>
+  </div>
+</section>
+<div class="wrap">
   <section>
     <h2>Four Colors</h2>
+    <div class="stage" id="stage"></div>
     <p class="hint">Tap a color to preview it.</p>
     <div class="grid" id="colorGrid"></div>
   </section>
@@ -126,6 +170,7 @@ footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:12px;l
       <p>Watch your inbox for the price. You’ll pay in person.</p>
     </div>
   </section>
+</div>
 </main>
 <footer>Mercy Built &middot; Not self-made. Mercy built. &middot; <a href="../">mercybuilt.com</a></footer>
 
