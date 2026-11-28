@@ -76,7 +76,8 @@ footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:12px;l
     <h1>The Romans 8:39 Hoodie</h1>
     <p class="sub">A soft fleece pullover with a quiet front mark and a Romans 8:39 back message about being fully known and deeply loved. Four colors. Reserve your size and color now.</p>
     <div class="verse">&ldquo;You are not forgotten. You are fully known. You are deeply loved.&rdquo; &middot; Romans 8:39</div>
-    <p><a class="hoodie-films__cta" href="#hoodie-films">Watch the hoodie films</a></p>
+    <p><a class="hoodie-films__cta" href="#preorder">Reserve My Hoodie</a></p>
+    <p><a class="hoodie-films__cta" href="#hoodie-films">See the Hoodies in Motion</a></p>
   </div>
 
 </div>
@@ -161,7 +162,7 @@ footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:12px;l
       </div>
       <div class="hp" aria-hidden="true"><label for="website">Website</label><input id="website" tabindex="-1" autocomplete="off"></div>
       <p class="err" id="err" role="alert"></p>
-      <button class="submit" id="submit" type="submit">Reserve My Hoodie</button>
+      <button class="submit" id="submit" type="submit">Submit</button>
       <p class="fine">By reserving you agree to be contacted about this Mercy Built preorder. We never sell your info.</p>
     </form>
     <div class="done" id="done">
@@ -226,13 +227,13 @@ footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:12px;l
     if(phone.replace(/\D/g,'').length<7) return err.textContent='Please enter a valid phone number.';
     if(!state.color) return err.textContent='Pick a color.';
     if(!state.size) return err.textContent='Pick a size.';
-    btn.disabled=true; btn.textContent='Reserving...';
+    btn.disabled=true; btn.textContent='Submitting…';
     var params=new URLSearchParams(location.search);
     var res = await sb.from('mercy_built_preorders').insert({
       product:(C.product||'hoodie').slice(0,60), full_name:name, email:email, phone:phone, size:state.size, color:state.color, quantity:qty,
       source:(params.get('utm_source')||params.get('src')||document.referrer||'direct').slice(0,200)
     });
-    if(res.error){ btn.disabled=false; btn.textContent='Reserve My Hoodie'; err.textContent='Something went wrong. Please try again.'; console.error(res.error); return; }
+    if(res.error){ btn.disabled=false; btn.textContent='Submit'; err.textContent='Something went wrong. Please try again.'; console.error(res.error); return; }
     form.style.display='none';
     var d=document.getElementById('done'); d.style.display='block';
     document.getElementById('doneMsg').textContent='Thanks, '+name.split(' ')[0]+'. Your '+state.color+' Romans 8:39 hoodie in size '+state.size+(qty>1?' (x'+qty+')':'')+' is reserved.';
